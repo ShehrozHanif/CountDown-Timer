@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import inquirer from "inquirer";
 import { differenceInSeconds, addSeconds } from "date-fns";
 import chalk from "chalk";
@@ -51,6 +53,16 @@ function countDown(val:number){
 }
 
 countDown(check)
+
+
+//--------------------------------------------------------------- Here End-------------------------------------------------------------
+
+
+
+
+//----This is the Second Way to do this both ways are correct to make Secounds Countdown Timer only the Difference in both ways is SetTimeout
+// and SetInterval. We use SetTimout in first way and SetInterval in the Second way
+
 
 
 

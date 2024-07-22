@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import { differenceInSeconds, addSeconds } from "date-fns";
 import chalk from "chalk";
