@@ -7,7 +7,7 @@ let input = await inquirer.prompt([
     {
         name: "timer",
         type: "number",
-        message: chalk.green("Kindly Set a Seconds Countdown Timer"),
+        message: chalk.green("Kindly Enter a Second to set a Countdown Timer"),
         transformer: (input, answers, flags) => {
             return chalk.yellow(input); // Change the input color
         },
@@ -43,6 +43,9 @@ function countDown(val) {
     updateTimer();
 }
 countDown(check);
+//--------------------------------------------------------------- Here End-------------------------------------------------------------
+//----This is the Second Way to do this both ways are correct to make Secounds Countdown Timer only the Difference in both ways is SetTimeout
+// and SetInterval. We use SetTimout in first way and SetInterval in the Second way
 // let input = await inquirer.prompt([
 //     {
 //         name:"timer",
